@@ -1,6 +1,6 @@
 FROM ubuntu
 
-RUN  apt-get update && apt-get install -y curl git \
+RUN  apt-get update && apt-get install -y curl git bzip2 \
    &&  curl -sL https://deb.nodesource.com/setup_8.x | bash - \
    &&  apt-get install -y nodejs \
    &&  curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add - \
